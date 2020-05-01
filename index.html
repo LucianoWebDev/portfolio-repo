@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/animations.css">
+  <link rel="stylesheet" href="/css/colors.css">
+  <link rel="stylesheet" href="/css/master.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <script src="https://kit.fontawesome.com/ce7dc07540.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i&display=swap&subset=latin-ext"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <title>Luciano M. - Portfolio</title>
+</head>
+
+<body>
+
+  <!-- ! NAV BAR -->
+  <div class="navbar navbar-expand-lg navbar-light">
+    <!--? NAVIGATION ELEMENT WITH BUTTON -->
+    <div class="navbar-brand d-none d-sm-block ml-2 mt-2" href="#">
+      <button id='title' class="text-dark fadeIn fThree btnShadow">
+        <p>Luciano M.</p>
+      </button>
+    </div>
+
+    <!--? NAVBAR TOGGLER FOR SM-DEVICE -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--? COLLAPS SECTION OF NAV BAR -->
+    <div class="collapse navbar-collapse justify-content-end fadeIn fFour" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item mr-5 ">
+          <a class="nav-link text-dark" href="#about-me">About-Me<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item mr-5 ">
+          <a class="nav-link text-dark" href="#footer">Links</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            JavaScript Snippets
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#hello-world">Hello, World!</a>
+            <a class="dropdown-item" href="#lYear">Leap Year</a>
+            <a class="dropdown-item" href="#armNumbers">Armstrong Numbers</a>
+            <a class="dropdown-item" href="#colorGuess">Color Guessing Game</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--!  WELCOME SECTION -->
+  <section class="container-fluid fullHeight " id="welcome">
+    <!--? ROW -->
+    <div class="row fullHeight d-flex align-items-center justify-content-center text-center">
+      <p class="fadeIn fOne">
+        <span class="welcText">Welcome</span>
+        <br>
+        scroll down <a href="#about-me"><i class="fas fa-sort-down"></i></a>
+      </p>
+    </div>
+  </section>
+
+  <!--TODO THREE DOTS -->
+  <div class="three-dots ">
+    <a href="#top" class="noUnderline">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+
+  <!--! About-Me SECTION -->
+  <section id="about-me" class="container-fluid notFullHeight">
+    <!--? ROW -->
+    <div class="row notFullHeight">
+      <!--? COL RIGH-->
+      <div class="col-md-6 order-1 order-md-0 align-items-center d-flex justify-content-center ">
+        <!--? BOX WITH ABOUT-ME SECTION -->
+        <div class="px-4 py-2 boxShadow wBorder bgYellow text-break maxHeight overflow-auto">
+          <h3 class="anResult text-center">
+            Who am I?
+          </h3>
+          <p class="text-left text-md-right">
+            Hello, I’m Luciano. I am 33 years old and I live Switzerland. I already tried before to familiarize
+            myself with HTML and CSS. But the motivation was not always the same, and life did not always play
+            along.
+            <br>
+            <br>
+            The # 100daysofcode Challenge was therefore very convenient for me. I made a new Instagram account and
+            startet to post one picture every day. That helped motivate me and keep going. On this page I would like to
+            show what I have learned in this short time. It may not be much, but i had a great time programming it and
+            learning it.
+
+          </p>
+        </div>
+
+      </div>
+
+      <!--? COL RIGHT -->
+      <div class="col-md-6 d-flex order-0 align-items-center justify-content-center ">
+        <!--? BOX WITH PIC OF ME -->
+        <div>
+          <img src="img/meCut.jpg" alt="Picture of Me, Luciano M." id="picOfMe" class="img-thumbnail">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--TODO THREE DOTS -->
+  <div class="three-dots ">
+    <a href="#top" class="noUnderline">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+
+  <!--! JavaScript Snippets #1 'Hello, World!-->
+  <section class="container-fluid notFullHeight  id=" hello-world">
+    <!--? ROW -->
+    <div class="row notFullHeight">
+      <!--? COL LEFT -->
+      <div class="col-md-6 align-items-center d-flex justify-content-center">
+        <!--? BOX WITH EXPLENATION -->
+        <div class="p-5 bgGreen boxShadow wBorder mr-3">
+          <p>
+            The first thing that I programmed - and most of the people who start programming - was of course a function
+            which returns 'Hello, World!
+          </p>
+        </div>
+      </div>
+
+      <!--? COL RIGHT-->
+      <div class="col-md-6 d-flex justify-content-center align-items-center ">
+        <!--? BOX WITH HELLO WORLD -->
+        <div class="p-5 bgOrange boxShadow wBorder text-center">
+
+          <h1 id="valueHW">
+            Push the Button
+          </h1>
+          <button class="mx-auto btnShadow" id="btnHW">
+            Say Hello!
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--TODO THREE DOTS -->
+  <div class="three-dots ">
+    <a href="#top" class="noUnderline">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+
+  <!--! Short Story -->
+  <section class="container-fluid halfHeight">
+    <!--? ROW CENTER -->
+    <div class="row halfHeight d-flex align-items-center justify-content-center text-center">
+      <!--? BOX WITH TEXT -->
+      <div class="boxShadow bgRed wBorder p-5">
+        <p class="tWhite">
+          WOW.. not impressed. That's it? One single button with "Hello, World!"? <br> My dog could do that.. (even
+          better) 🐕
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--TODO THREE DOTS -->
+  <div class="three-dots ">
+    <a href="#top" class="noUnderline">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+
+  <!--! JavaScript Snippets #2 'Leap Year'-->
+  <section class="container-fluid notFullHeight" id="lYear">
+    <!--? ROW -->
+    <div class="row notFullHeight">
+
+      <!--? COL LEFT -->
+      <div class="col-12 col-md-6 d-flex justify-content-center align-items-center order-1 order-md-0">
+
+        <!--? BOX WITH FORM-->
+        <div class="p-5 bgViolet boxShadow wBorder text-center">
+          <form action="">
+            <label for="leapYear" class="h3 tWhite">Add a Year</label><br>
+            <input type="number" class="text-center" name="leapYear" min="0" max="2999" id="valueLY"
+              placeholder="choose a year">
+          </form>
+
+          <h4 id="resultLY"></h4>
+          <button class="mx-auto btnShadow" id="btnLY">
+            Find Out!
+          </button>
+        </div>
+      </div>
+
+      <!--? COL RIGHT -->
+      <div class="col-md-6 align-items-center d-flex justify-content-center  order-0 order-md-1">
+
+        <!--? BOX WITH EXPLENATION -->
+        <div class="p-5 col-12 bgGreen boxShadow wBorder">
+          <p>
+            I also made a small program to find out whether a year is a leap year or not.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--TODO THREE DOTS -->
+  <div class="three-dots ">
+    <a href="#top" class="noUnderline">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+
+  <!--! JavaScript Snippets #3 'Armstrong Number!-->
+  <section class="container-fluid notFullHeight" id="armNumbers">
+    <div class="row notFullHeight">
+      <!--? COL LEFT -->
+      <div class="col-md-6 align-items-center d-flex justify-content-center ">
+
+        <!--? BOX WITH EXPLENATION -->
+        <div class="p-3 bgGreen boxShadow wBorder">
+          <p>
+            Have you ever heard of the 'Armstrong Numbers'? Me neither. But, basically it's a number that is the sum of
+            its
+            own digits each raised to the power of the number of digits. Get it? LOL
+          </p>
+          <p class="text-center">
+            An example:
+            <span class="anStyle">54748 = 5^{5}+4^{5}+7^{5}+4^{5}+8^{5}
+              =<wbr>3125+1024+16807+1024+32768 = <wbr></span><span class="anResult tWhite">54748</span>
+          </p>
+        </div>
+      </div>
+      <!--? COL RIGHT -->
+      <div class="col-md-6 d-flex justify-content-center align-items-center ">
+
+        <!--? BOX WITH CALCULATION -->
+        <div class="p-5 bgOrange boxShadow wBorder text-center">
+          <form action="">
+            <label for="armNum" class="h3">Insert a Number</label><br>
+            <input type="number" class="text-center" name="armNum" min="0" max="99999" id="valueAN"
+              placeholder="choose a number">
+          </form>
+          <h5 id="resultAN"></h5>
+          <button class="mx-auto btnShadow" id="btnAN">
+            Find Out!
+          </button>
+
+        </div>
+      </div>
+  </section>
+
+  <!--TODO THREE DOTS -->
+  <div class="three-dots ">
+    <a href="#top" class="noUnderline">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+
+  <!--! Short Story #2 -->
+  <section class="container-fluid halfHeight d-none d-sm-block">
+    <!--? ROW CENTER-->
+    <div class="row halfHeight d-flex align-items-center justify-content-center text-center">
+      <!--? BOX WITH TEXT -->
+      <div class="bgPink bgRed wBorder boxShadow p-5">
+        <p>
+          Okay, you have some mathematic stuff over here.. Now - let's do something fancy! <br>
+          <span class="h3">I WANT COLORS!! 🌈</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--TODO THREE DOTS -->
+  <div class="three-dots d-none d-sm-block">
+    <a href="#top" class="noUnderline">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+
+  <!--! Color Guessing Game SECTION-->
+  <section class="container-fluid notFullHeight justify-content-center d-none d-sm-block" id="colorGuess">
+    <div class="container notFullHeight boxShadow bgViolet wBorder">
+      <!--? TITLE OF THE GAME -->
+      <div class="p-5 justify-content-around align-items-center">
+        <h1 id="hOne" class="text-center">
+          <span class="tWhite">The</span><br><span id="colorDisplay">RGB</span><br><span
+            class="anResult tWhite">Guessing Game</span>
+        </h1>
+      </div>
+      <!--? TOP THREE SQAURES -->
+      <div class="row justify-content-around align-items-center">
+        <div class="square boxShadow wBorder"></div>
+        <div class="square boxShadow wBorder"></div>
+        <div class="square boxShadow wBorder"></div>
+      </div>
+      <br>
+      <!--? RESET BUTTON -->
+      <div class="justify-content-around text-center">
+        <button class="btnShadow" id="reset">Reset!</button>
+      </div>
+
+      <!--? BOTTOM THREE SQUARE -->
+      <div class="row py-3 justify-content-around align-items-center">
+        <div class="square boxShadow wBorder"></div>
+        <div class="square boxShadow wBorder"></div>
+        <div class="square boxShadow wBorder"></div>
+      </div>
+
+      <!--? EASY & HARD BUTTONS -->
+      <div class="pt-2 justify-content-center text-center">
+        <button class="btnShadow mode">Easy</button>
+        <button class="btnShadow mode selected">Hard</button>
+      </div>
+
+      <!--? BOTTOM TEXT -->
+      <div class="pt-2 tWhite justify-content-center text-center">
+        <p class="px-3 cgText tYellow">
+          Here are your colors. Try to find out which of the colors above matches the RGB# in the title.
+        </p>
+      </div>
+
+      <div class="justify-content-center text-center ">
+        <span id="message"></span><br>
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+
+  <!--TODO THREE DOTS -->
+  <div class="three-dots mt-4 d-none d-sm-block">
+    <a href="#top" class="noUnderline">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+
+  <!--! Short Story -->
+  <section class="container-fluid halfHeight">
+    <!--? ROW -->
+    <div class="row halfHeight d-flex align-items-center justify-content-center text-center">
+      <!--? BOXH WITH EXPLENATION -->
+      <div class="boxShadow bgPink wBorder py-1 px-2">
+        <h3 class="anResult">
+          The future of this site:
+        </h3>
+        <p class="tWhite text-break">
+          This is not much. But it's a start. I will add more and more new stuff and will try to make it a real
+          homepage.
+          <br>
+          Now it's just to show what I've learned.
+          <br>
+          <br>
+          <span class="h5">Oh, and I 🖤 🍕</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--TODO THREE DOTS who vanish -->
+  <div class="three-dots d-none d-sm-block">
+    <a href="#top" class="noUnderline">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+
+  <!--! Footer SECTION-->
+  <footer class="container-fluid footHeight bgOrange" id="footer">
+    <!--? BOX WITH CONTENT -->
+    <div class="row footHeight align-items-center text-center justify-content-center">
+
+      <div class="col-2 order-sm-0 d-none d-sm-block">Made with <a href="/game/diceGame.html"
+          target="_blank"><i class="fas fa-heart data-toggle=" tooltip" data-placement="top" title="Wait, what's this?""></i></a> <br> in Zürich</div>
+
+      <div class=" col-2 order-sm-3 order-md-1"><a href="https://github.com/LucianoWebDev" target="_blank"><i
+                class="fab fa-github"></i></a></div>
+
+      <div class="col-2 order-sm-4 order-md-2"><a href="https://instagram.com/lucianodevjourney/" target="_blank"><i
+            class="fab fa-instagram 3x"></i></a></i></div>
+
+      <div class="col-2 order-sm-1 order-md-3 d-none d-sm-block">Luciano M. - 2020</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

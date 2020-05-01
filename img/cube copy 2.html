@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="colors.css">
+  <link rel="stylesheet" href="master.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <script src="https://kit.fontawesome.com/ce7dc07540.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i&display=swap&subset=latin-ext"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <title>"Hidden" Cube Game</title>
+</head>
+
+<body>
+  <!--! Navigation Bar -->
+  <div class="navbar navbar-expand-lg navbar-light">
+
+    <div class="navbar-brand d-none d-sm-block ml-2 mt-2" href="#">
+      <button id='title' class="text-dark fadeIn fTwo btnShadow">
+        <a href="index.html" rel="noopener noreferrer"><p>Luciano M.</p></a>
+      </button>
+    </div>
+
+  </div>
+
+  <!--! Cube Game -->
+  <!--? The whole background -->
+  <div class="container-fluid notFullHeight clearfix">
+   
+
+     <!--? The Box in the middle-->
+    <div class="container notFullHeight boxShadow bgViolet wBorder">
+      
+      <div class="row">
+
+        <!--TODO First column in the Box-->
+        <div class="col bgYellow notFullHeight ">
+
+          <div class="player-0-panel active notFullHeight">
+            <div class="player-name" id="name-0">Player 1</div>
+            <div class="player-score" id="score-0">43</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-0">11</div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!--TODO Second column in the Box-->
+        <div class="col bgRed notFullHeight ">
+          
+          <div><button class="btnShadow btn-new"><i class="ion-ios-plus-outline"></i>New game</button></div>
+          
+          <img src="img/dice-5.png" alt="Dice" id="dice-1" class="dice">
+          
+          <div><button class="btnShadow btn-roll"><i class="ion-ios-loop"></i>Roll dice</button></div>
+          
+          <img src="img/dice-5.png" alt="Dice" id="dice-2" class="dice">
+          
+          <div><button class="btnShadow btn-hold"><i class="ion-ios-download-outline"></i>Hold</button></div>
+          
+          <input type="text" placeholder="Final Score" class="final-score text-center">
+        
+        </div>
+
+
+        <!--TODO THird column in the Box--> 
+        <div class="col bgBlue notFullHeight ">
+
+          <div class="player-1-panel">
+
+            <div class="player-name" id="name-1">Player 2</div>
+            <div class="player-score" id="score-1">72</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-1">0</div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+/*! Font - Colors *************************/
+.tWhite{
+    color: white;
+}
+
+.tYellow{
+    color: yellow
+}
+
+/*! Background - Colors *******************/
+body{
+    background-color: #000000b9;
+}
+
+.bgBlack{
+    background-color: #000000b9;
+}
+
+.bgYellow {
+    background-color: yellow;
+}
+
+.bgRed {
+    background-color: red;
+}
+
+.bgGreen {
+    background-color: green;
+}
+
+.bgBlue {
+    background-color: blue;
+}
+
+.bgOrange {
+    background-color: orange;
+}
+
+.wBorder {
+    border: 2px solid white;
+}
+
+.bgDefault{
+    background-color: thistle;
+}
+
+.bgPink {
+    background-color: pink;
+}
+
+.bgViolet{
+    background-color: rgb(95, 0, 173);
+}
+
+.welcomeGradient{
+    background: linear-gradient(to bottom, white, #000000b9);
+}
+
+/*! Icon Color ****************************/
+
+.fab, .fas{
+    color: black;
+}
+
+/*! Name Title on Top *********************/
+
+#title {
+    align-self: center;
+    height: 2em;
+    border: 3px solid black;
+    padding: 4px 20px;
+    font-size: 1.5em;
+    margin: 1% 0 0 2%;
+}
+
+/*! Three Dots Separators *****************/
+.three-dots {
+    text-align: center;
+}
+
+.three-dots span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 0 blue, 4px 4px red;
+    background: black;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.noUnderline:link {
+    text-decoration: none;
+}
+
+/*! Box & Button Shadows **************************/
+
+.btnShadow{    
+    box-shadow: 3px 3px 0 blue, 6px 6px red;    
+}
+
+.boxShadow {
+    box-shadow: 20px 20px black;
+}
+
+
+/*! Leap Year Colors *********************/
+#resultLY{
+    color: white;
+}
+
+/*! Armstron Example Color ***************/
+.anStyle{
+    color: white;
+}
+.anResult{
+    border-bottom: 3px double red;
+}
+
+/*! Colors Guessing Game *****************/
+#message{
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px green, 2px 2px yellow;
+}
+
+.selected{
+    color: blue;
+    background: yellow;
+}
+
+/*! Colors 'Hidden Game' ******************/
+.rulesTitle{
+    font-weight: bolder;
+    color: yellow;
+    font-size: 1.3rem;
+    letter-spacing: 1.2rem;
+}

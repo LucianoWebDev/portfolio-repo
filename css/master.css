@@ -1,0 +1,175 @@
+*{
+    font-family: 'Space Mono', monospace;
+}
+
+p{
+    color: black;
+    overflow-wrap: break-word;
+    text-decoration: none;
+}
+
+p:hover{
+    text-decoration: none;
+}
+
+input{
+    width: 175px;
+}
+
+/*! Heights ********************/
+
+.fullHeight{
+    height: 100vh;
+}
+
+.notFullHeight{
+    height: 85vh;
+}
+
+.halfHeight{
+    height: 50vh;
+}
+
+.boxHeight{
+    height: 30vh;
+}
+
+.footHeight{
+    height: 7vh;
+}
+
+.maxHeight{
+    max-height: 45vh;
+}
+
+#welcome{
+    margin-top: -10vh;
+}
+
+.welcText{
+    font-size: 10vw;
+}
+
+#picOfMe{
+    width: 35vh;
+    border-radius: 50%;
+    border-color: black;
+}
+
+/*! Color Guessing Game *********/
+.square{
+    width: 10vw;
+    height: 10vh;
+    background: salmon;
+    transition: background-color 0.4s;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+}
+
+.cgText{
+    font-size: 1.8vw;
+}
+
+/*! Footer **********************/
+a:hover{
+    text-decoration: none;
+}
+
+.fab{
+    font-size: 2rem;
+}
+
+/********************************?
+/******? Hidden Game ************/
+/********** GENERAL *************/
+/********************************/
+.sqDice{
+    width: 6vw;
+    height: 6vh;
+    background: salmon;
+    transition: background-color 0.4s;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    box-shadow: 10px 10px black;
+}
+
+.rules{
+    font-size: 0.9rem;
+}
+
+/*********************************************
+    *! PLAYERS
+**********************************************/
+
+.player-name {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.player-score {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #EB4D4D;
+    margin-bottom: 130px;
+}
+
+.active { 
+    background-color: yellow;
+    height: 70vh;
+    box-shadow: 3px 3px blue, 6px 6px red;
+}
+
+.active .player-name {
+    font-weight: 300;
+}
+
+.active .player-name::after {
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #EB4D4D;
+    top: -7px;
+    right: 10px;
+}
+
+.player-current-box {
+    background-color: #EB4D4D;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+
+.player-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #222;
+}
+
+.player-current-score {
+    font-size: 30px;
+}
+
+.dice {
+    height: 12vh;
+}
+
+.winner {
+    height: 70vh;
+    background-color: #f7f7f7;
+}
+
+.winner .player-name { 
+    
+    font-weight: 500; 
+    color: #EB4D4D;
+}
