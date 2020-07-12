@@ -42,7 +42,6 @@
     -webkit-animation-duration: 1s;
     -moz-animation-duration: 1s;
     animation-duration: 1s;
-
 }
 
 .fadeIn.fOne {
@@ -61,7 +60,6 @@
     -webkit-animation-delay: 1.6s;
     -moz-animation-delay: 1.6s;
     animation-delay: 1.6s;
-    color: blue;
 }
 
 .fadeIn.fFour {

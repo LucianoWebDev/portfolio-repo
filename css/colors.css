@@ -1,135 +1,113 @@
-/*! Font - Colors *************************/
-.tWhite{
-    color: white;
-}
+/*! Link Colors *************************/
 
-.tYellow{
-    color: yellow
-}
-
-/*! Background - Colors *******************/
-body{
-    background-color: #000000b9;
-}
-
-.bgBlack{
-    background-color: #000000b9;
-}
-
-.bgYellow {
-    background-color: yellow;
-}
-
-.bgRed {
-    background-color: red;
-}
-
-.bgGreen {
-    background-color: green;
-}
-
-.bgBlue {
-    background-color: blue;
-}
-
-.bgOrange {
-    background-color: orange;
-}
-
-.wBorder {
-    border: 2px solid white;
-}
-
-.bgDefault{
-    background-color: thistle;
-}
-
-.bgPink {
-    background-color: pink;
-}
-
-.bgViolet{
-    background-color: rgb(95, 0, 173);
-}
-
-.welcomeGradient{
-    background: linear-gradient(to bottom, white, #000000b9);
-}
-
-/*! Icon Color ****************************/
-
-.fab, .fas{
+a:link {
     color: black;
 }
 
-/*! Name Title on Top *********************/
+a:visited {
+    color: black;
+}
 
-#title {
-    align-self: center;
-    height: 2em;
-    border: 3px solid black;
-    padding: 4px 20px;
-    font-size: 1.5em;
-    margin: 1% 0 0 2%;
+a:active {
+    color: inherit;
+}
+
+/*! Font Colors & Style ***************************/
+.tWhite {
+    color: white;
+}
+
+.tBlack {
+    color: black;
+}
+
+.tYellow {
+    color: yellow;
+}
+
+.tGreenCont {
+    color: #fffacd;
+}
+
+.tRedCont {
+    color: #2e343b;
+}
+
+.tBlueCont {
+    color: #eb9532;
+}
+
+.tOrangeCont {
+    color: #3455db;
+}
+
+.doubleUnderline {
+    border-bottom: 3px double red;
+}
+.doubleUnderlineDark {
+    border-bottom: 3px double black;
 }
 
 /*! Three Dots Separators *****************/
-.three-dots {
-    text-align: center;
-}
-
 .three-dots span {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    box-shadow: 2px 2px 0 blue, 4px 4px red;
+    box-shadow: 2px 2px red, 4px 4px blue;
     background: black;
     display: inline-block;
-    margin: 0 5px;
+    margin: 20px 5px;
 }
 
 .noUnderline:link {
     text-decoration: none;
 }
+.three-dots-special span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 2px 2px red, 4px 4px blue;
+    background: black;
+    display: inline-block;
+    margin: 0 5px;
+}
 
-/*! Box & Button Shadows **************************/
-
-.btnShadow{    
-    box-shadow: 3px 3px 0 blue, 6px 6px red;    
+/*! Box, Font & Button Shadows **************************/
+.btnShadow {
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    border-color: black;
+    box-shadow: 3px 3px blue, 6px 6px red;
 }
 
 .boxShadow {
     box-shadow: 20px 20px black;
 }
 
-
-/*! Leap Year Colors *********************/
-#resultLY{
-    color: white;
+.tShadowBright {
+    text-shadow: 2px 2px 0px black;
 }
 
-/*! Armstron Example Color ***************/
-.anStyle{
-    color: white;
-}
-.anResult{
-    border-bottom: 3px double red;
+.tShadowDark {
+    text-shadow: 2px 2px white;
 }
 
 /*! Colors Guessing Game *****************/
-#message{
+#message {
     color: white;
     font-size: 2rem;
     text-shadow: 2px 2px green, 2px 2px yellow;
 }
 
-.selected{
+.selected {
     color: blue;
     background: yellow;
 }
 
 /*! Colors 'Hidden Game' ******************/
-.rulesTitle{
+.rulesTitle {
     font-weight: bolder;
     color: yellow;
     font-size: 1.3rem;

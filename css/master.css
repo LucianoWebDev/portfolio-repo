@@ -1,89 +1,621 @@
-*{
+* {
     font-family: 'Space Mono', monospace;
+    margin: 0px;
+    padding: 0px;
 }
 
-p{
+p {
     color: black;
     overflow-wrap: break-word;
     text-decoration: none;
 }
 
-p:hover{
+p:hover {
     text-decoration: none;
 }
 
-input{
-    width: 175px;
+input {
+    font-size: 1.3rem;
+    height: 2rem;
+    width: 15rem;
+}
+
+/*! Flexbox Stuff **************/
+.dFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.dFlexFoot {
+    padding: 0px 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*! Three Dots Separators *****************/
+.three-dots {
+    display: none;
+}
+.three-dots-special {
+    display: block;
+    text-align: center;
 }
 
 /*! Heights ********************/
-
-.fullHeight{
+.fullHeight {
     height: 100vh;
 }
 
-.notFullHeight{
-    height: 85vh;
+.notFullHeight {
+    height: 90vh;
 }
 
-.halfHeight{
-    height: 50vh;
+/*! Navigation Bar Section **/
+.navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: flex-end;
+    width: 100%;
+    height: 10vh;
 }
 
-.boxHeight{
-    height: 30vh;
+.btnNavbar {
+    width: auto;
+    height: 2.5em;
+    margin: 10px 15px 0px 15px;
+    padding: 0px 35px;
+    border-color: black;
+    box-shadow: 3px 3px blue, 6px 6px red;
 }
 
-.footHeight{
-    height: 7vh;
+.dropDownBox {
+    overflow: hidden;
+    height: 0px;
+    background-color: red;
+    transition: all 1s ease;
 }
 
-.maxHeight{
-    max-height: 45vh;
+.dropDownBox a {
+    color: white;
 }
 
-#welcome{
-    margin-top: -10vh;
+.btnNavbar:hover > .dropDownBox {
+    display: block;
+    height: 30px;
 }
 
-.welcText{
+/*! Welcome Section *********/
+.welcomeSectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+
+.welcomeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.welcomeSection p {
+    padding: 0px 35px;
+}
+
+.welcText {
     font-size: 10vw;
 }
 
-#picOfMe{
-    width: 35vh;
+/*! About Me Section ********/
+.aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.aboutMePictureBox {
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+}
+
+#picOfMe {
+    width: 22vh;
+    padding: 3px;
+    border: 2px solid black;
     border-radius: 50%;
     border-color: black;
+    transition: all 0.6s;
+}
+
+#picOfMe:hover {
+    width: 24vh;
+    border-top: none;
+    border-left: none;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    box-shadow: 10px 10px 0px black;
+}
+
+.aboutMeBox {
+    background-color: yellow;
+    text-align: center;
+    width: 100%;
+    height: 65vh;
+}
+
+.aboutMeBox p {
+    text-align: center;
+    padding: 5px 15px 0px 15px;
+}
+
+.aboutMeBox p:last-child {
+    padding-bottom: 15px;
+}
+
+.aboutMeBox h1 {
+    padding: 10px 15px 0px 15px;
+}
+
+/*! Hello World Section *****/
+.helloContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    height: 100vh;
+    width: 100%;
+}
+
+.helloTextBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100vw;
+    height: 70vh;
+    font-size: 1.4rem;
+    text-align: right;
+    background-color: tomato;
+}
+
+.helloTextBox p,
+h1 {
+    padding: 0px 15px;
+}
+
+.helloButtonBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+/*! Not Impressed Section */
+.notImpressedContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.notImpressedBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: inherit;
+    width: 100vw;
+    padding: 0px 15px;
+    font-size: 1.6rem;
+    background-color: red;
+}
+
+.notImpressedBox p {
+    color: white;
+}
+
+/*! Leap Year Section *****/
+.leapYearContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3da5d9;
+    height: 100vh;
+    width: 100%;
+}
+
+.leapYearTextBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15px;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+    font-size: 1.8rem;
+    text-align: left;
+    background-color: #2364aa;
+    word-wrap: break-word;
+}
+
+.leapYearButtonBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+#resultLY {
+    color: white;
+}
+
+.textPadding {
+    padding: 0px 2rem;
+}
+
+/*! Weather Widget Section *******/
+.weatherContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: 100%;
+}
+
+.weatherDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: inherit;
+    width: 100%;
+    background-color: red;
+}
+
+.weatherCityDownest,
+.weatherTempDownest,
+.weatherDescDownest {
+    color: white;
+    font-size: 2rem;
+    word-wrap: break-word;
+    padding: 0px 15px;
+}
+
+.weatherIconDownest {
+    margin-bottom: 0px;
+    height: 5.5rem;
+}
+
+.btnGeo {
+    width: auto;
+    padding: 0px 15px;
+    background-color: white;
+    border-color: black;
+    box-shadow: 3px 3px blue, 6px 6px green;
+}
+
+/*! Armstrong Number Section *****/
+.armstrongNumbersContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #004f2d;
+    height: 100vh;
+    width: 100%;
+}
+
+.armstrongNumbersTextBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.anStyle {
+    color: #fefefe;
+    text-shadow: 2px 2px 0px black;
+}
+
+.anExampleText {
+    color: red;
+    text-shadow: 2px 2px 0px black;
+    text-decoration: underline white;
+}
+
+.armstrongNumbersTextBox h1 {
+    text-shadow: 1px 1px 0px #056b41;
+}
+
+.armstrongNumbersButtonBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #056b41;
+    height: 40vh;
+    width: 100vw;
+}
+
+.armstrongNumbersButtonBoxText {
+    font-size: 2.2rem;
+}
+
+/*! I want colors Section ***/
+.iWantColorsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+}
+
+.iWantColorsBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: inherit;
+    font-size: 1.6rem;
+    padding: 0px 15px;
+    background-color: pink;
+}
+
+/*! Horizontal Line Style ***/
+
+.horLine {
+    height: 2vh;
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 /*! Color Guessing Game *********/
-.square{
-    width: 10vw;
+.colorGuessingGameContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(95, 0, 173);
+}
+
+.colorGuessingGameTitleRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
+    height: 20vh;
+}
+
+.colorGuessingGameTopRow,
+.colorGuessingGameBottomRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+}
+
+.colorGuessingGameButtonRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+
+.colorGuessingGameBottomButtonRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+}
+
+.colorGuessingGameDuoButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+}
+
+.colorGuessingGameButtonRow button {
+    margin-top: 0px;
+}
+
+.square {
+    width: 20vw;
     height: 10vh;
     background: salmon;
+    box-shadow: 5px 5px 0px black;
     transition: background-color 0.4s;
     -webkit-transition: background-color 0.4s;
     -moz-transition: background-color 0.4s;
 }
 
-.cgText{
-    font-size: 1.8vw;
+#colorDisplay {
+    font-size: 1.8rem;
+}
+
+.cgText {
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 0px;
+    text-shadow: 1px 1px 0px red;
+}
+
+/*! Project Statement Section ***********/
+
+.projectExplenationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 100%;
+}
+
+.projectExplenationBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: inherit;
+    font-size: 1.4rem;
+    padding: 0px 15px;
+    background-color: #bfd7ea;
+}
+
+/*! Project Section *************/
+
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #ceb3ab;
+}
+
+.projectBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40vw;
+    height: 30vh;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    box-shadow: 10px 10px 0px black;
+}
+
+.projectImageDiv {
+    width: inherit;
+}
+
+.projectImage {
+    top: 0;
+    max-height: 200px;
+    width: inherit;
+}
+
+.projectTitle {
+    font-size: 1rem;
+}
+
+.projectParagraph {
+    font-size: 0.8rem;
+}
+
+.pizzaProject {
+    background-color: yellow;
+}
+
+.calcProject {
+    background-color: #004f2d;
+}
+
+.weatherProject {
+    background-color: #eb4d4d;
+}
+
+.timeProject {
+    background-color: blueviolet;
+}
+
+.weatherImageDiv {
+    height: 200px;
+    background-color: white;
+}
+
+.whiteText {
+    color: white;
+    padding: 0px 15px;
+}
+
+.pizzaText,
+.weatherText {
+    padding: 0px 15px;
 }
 
 /*! Footer **********************/
-a:hover{
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: orange;
+}
+
+.footerDiv {
+    text-align: center;
+    font-size: 0.8rem;
+    width: 25vw;
+}
+
+a:hover {
     text-decoration: none;
 }
 
-.fab{
-    font-size: 2rem;
+.fab,
+.far,
+.fas {
+    font-size: 1.3rem;
+    color: black;
 }
 
 /********************************?
 /******? Hidden Game ************/
 /********** GENERAL *************/
 /********************************/
-.sqDice{
+.sqDice {
     width: 6vw;
     height: 6vh;
     background: salmon;
@@ -93,7 +625,7 @@ a:hover{
     box-shadow: 10px 10px black;
 }
 
-.rules{
+.rules {
     font-size: 0.9rem;
 }
 
@@ -116,11 +648,11 @@ a:hover{
     text-align: center;
     font-size: 80px;
     font-weight: 100;
-    color: #EB4D4D;
+    color: #eb4d4d;
     margin-bottom: 130px;
 }
 
-.active { 
+.active {
     background-color: yellow;
     height: 70vh;
     box-shadow: 3px 3px blue, 6px 6px red;
@@ -131,16 +663,16 @@ a:hover{
 }
 
 .active .player-name::after {
-    content: "\2022";
+    content: '\2022';
     font-size: 47px;
     position: absolute;
-    color: #EB4D4D;
+    color: #eb4d4d;
     top: -7px;
     right: 10px;
 }
 
 .player-current-box {
-    background-color: #EB4D4D;
+    background-color: #eb4d4d;
     color: #fff;
     width: 40%;
     margin: 0 auto;
@@ -168,8 +700,7 @@ a:hover{
     background-color: #f7f7f7;
 }
 
-.winner .player-name { 
-    
-    font-weight: 500; 
-    color: #EB4D4D;
+.winner .player-name {
+    font-weight: 500;
+    color: #eb4d4d;
 }

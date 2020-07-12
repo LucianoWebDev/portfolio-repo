@@ -1,0 +1,485 @@
+/***********************************************************/
+/*! ******* Media Query for Desktop Screens ****************/
+/* The idea is that normal status is portrait(mobile) mode*/
+/***********************************************************/
+
+@media (orientation: landscape) {
+    /*! Horizontal Line Styling ***********/
+    .horLine {
+        display: none;
+    }
+
+    /*! Three Dots Styling ***********/
+    .three-dots {
+        display: block;
+        text-align: center;
+    }
+
+    /*! Styling all Containers ********/
+    .helloContainer,
+    .leapYearContainer,
+    .armstrongNumbersContainer {
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: white;
+    }
+
+    /*! Styling all Boxes ************/
+    .box {
+        padding: 0px 25px;
+        font-size: 1.4rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 40vw;
+        height: 50vh;
+        overflow: auto;
+        border-right: 3px solid white;
+        border-bottom: 3px solid white;
+        border-top: none;
+        box-shadow: 20px 20px black;
+        transition: all 1s ease-in-out;
+    }
+
+    /************************************/
+    /*******! The Different Sections ********/
+    /*? *********************************/
+
+    /*! Navigation Bar Section ******************/
+    .navBar {
+        justify-content: flex-start;
+    }
+
+    .btnNavbar {
+        width: 17rem;
+        height: 2em;
+        right: 25px;
+        top: 25px;
+        font-size: 2em;
+        border-color: black;
+        box-shadow: 3px 3px blue, 6px 6px red;
+    }
+
+    /*! Welcome Section *****************/
+    .welcomeSectionContainer {
+        height: 90vh;
+    }
+
+    .welcomeSection p {
+        font-size: 1.8rem;
+    }
+
+    /*! About Me Section ****************/
+    .aboutMeContainer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    .aboutMeBox {
+        height: 65vh;
+        width: 50vw;
+    }
+
+    .aboutMeContainer:hover > .aboutMeBox {
+        background-color: orange;
+    }
+
+    .aboutMePictureBox {
+        width: 40vw;
+    }
+
+    #picOfMe {
+        width: 35vh;
+        padding: 3px;
+        border: 2px solid black;
+        border-radius: 50%;
+        border-color: black;
+        transition: all 0.6s;
+    }
+
+    #picOfMe:hover {
+        width: 37vh;
+        border-top: none;
+        border-left: none;
+        border-right: 3px solid white;
+        border-bottom: 3px solid white;
+        box-shadow: 10px 10px 0px black;
+    }
+
+    /*! Hello World Section ******/
+    .helloButtonBox {
+        background-color: orange;
+    }
+
+    /*! Not Impressed Section ***/
+    .notImpressedContainer {
+        height: 80vh;
+    }
+    .notImpressedBox {
+        height: 40vh;
+        width: 60vw;
+        font-size: 1.8rem;
+        border-bottom: 3px solid white;
+        border-right: 3px solid white;
+        box-shadow: 20px 20px 0px black;
+        transition: all 1s ease-in-out;
+    }
+    /*! Leap Year Section ********/
+    .leapYearButtonBox {
+        background-color: green;
+    }
+
+    .leapYearTextBox {
+        font-size: 2rem;
+    }
+
+    .leapYearTextBox h1 {
+        color: red;
+        text-shadow: 1px 1px 0px white;
+        font-size: 3.1rem;
+    }
+
+    /*! Weather Widget Box Styling ****/
+    .weatherDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 40vh;
+        width: 60vw;
+        border-bottom: 3px solid white;
+        border-right: 3px solid white;
+        box-shadow: 20px 20px 0px black;
+    }
+
+    .weatherCityDownest,
+    .weatherTempDownest,
+    .weatherDescDownest {
+        color: white;
+        font-size: 2.2rem;
+        word-wrap: break-word;
+        padding: 0px 15px;
+    }
+
+    .weatherIconDownest {
+        margin-bottom: 0px;
+        height: 3rem;
+    }
+
+    .btnGeo {
+        height: 6vh;
+    }
+
+    /*! Armstrong Numbers Section ********/
+    .armstrongNumbersTextBox {
+        background-color: blue;
+    }
+
+    /*! I Want Colors Section ***/
+    .iWantColorsContainer {
+        width: 100%;
+    }
+
+    .iWantColorsBox {
+        height: 40vh;
+        width: 60vw;
+        font-size: 2rem;
+        border-right: 3px solid white;
+        border-bottom: 3px solid white;
+        box-shadow: 20px 20px 0px black;
+    }
+
+    /*! Color-Guessing Game Stuff *****/
+    #colorDisplay {
+        font-size: 3rem;
+        color: red;
+    }
+
+    .cgText {
+        font-size: 2rem;
+    }
+
+    .square {
+        width: 15vw;
+        height: 15vh;
+        border: 2px solid white;
+        box-shadow: 15px 15px 0px black;
+    }
+
+    /*! Project Statement ***********/
+
+    .projectExplenationContainer {
+        height: 40vh;
+    }
+
+    .projectExplenationBox {
+        height: 20vh;
+        font-size: 1.2rem;
+        padding: 0px 15px;
+        background-color: #bfd7ea;
+        border-right: 3px solid white;
+        border-bottom: 3px solid white;
+        box-shadow: 15px 15px 0px black;
+    }
+
+    .projectExplenationBox p {
+        color: red;
+    }
+
+    /*! Prject Section ***********/
+    .projectContainer {
+        height: 150vh;
+    }
+
+    .projectBox {
+        margin: 0px 30px;
+        width: 30vw;
+        height: 44vh;
+        box-shadow: 20px 20px 0px black;
+    }
+
+    .projectImageDiv {
+        width: inherit;
+    }
+
+    .projectImage {
+        top: 0;
+        max-height: 200px;
+        width: inherit;
+    }
+
+    .projectTitleDiv {
+        text-align: center;
+    }
+
+    .projectTitle {
+        font-size: 2rem;
+    }
+
+    .projectParagraph {
+        font-size: 1.2rem;
+    }
+
+    .pizzaProject {
+        background-color: yellow;
+    }
+
+    .calcProject {
+        background-color: #004f2d;
+    }
+
+    .weatherProject {
+        background-color: #eb4d4d;
+    }
+
+    .timeProject {
+        background-color: blueviolet;
+    }
+
+    /*! Footer Section ***/
+    .footerContainer {
+        height: 10vh;
+    }
+
+    .footerDiv {
+        text-align: center;
+        font-size: 1.3rem;
+        width: 25vw;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .fab,
+    .far {
+        font-size: 2.5rem;
+    }
+}
+
+/***********************************************************/
+/*! ******* Media Query for Portrait Screens ***************/
+/***********************************************************/
+@media (orientation: portrait) {
+    .aboutMeBox {
+        border-top: 2px solid black;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .helloTextBox {
+        margin-top: 15px;
+        border-bottom-left-radius: 50%;
+        border-top-right-radius: 25px;
+        border-bottom: 2px solid red;
+        border-top: 2px solid red;
+        border-top-left-radius: 40%;
+    }
+
+    .leapYearTextBox {
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 50%;
+        border-bottom: 1px solid yellow;
+        border-top: 1px solid yellow;
+    }
+
+    .armstrongNumbersButtonBox {
+        border-top-right-radius: 50%;
+        border-top: 1px solid red;
+    }
+}
+
+@media (max-height: 550px) and (orientation: landscape) {
+    /*! About Me Section ***/
+    .aboutMeBox {
+        height: 80vh;
+        overflow: scroll;
+    }
+
+    .aboutMeBox h1 {
+        font-size: 1.8rem;
+    }
+
+    #picOfMe {
+        width: 60vh;
+    }
+
+    /*! Leap Year Section ****/
+    .leapYearTextBox p {
+        font-size: 1rem;
+    }
+
+    .leapYearTextBox h1 {
+        font-size: 1.8rem;
+    }
+
+    /*! Not Impressed Section ***/
+    .notImpressedBox {
+        height: 40vh;
+        font-size: 1.2rem;
+    }
+
+    /*! I Want Colors Styling ***/
+    .iWantColorsBox p {
+        font-size: 1.1rem;
+    }
+
+    .colorsSpan {
+        font-size: 1rem;
+    }
+
+    /*! Weather Widget Section ***/
+    .weatherCityDownest,
+    .weatherTempDownest,
+    .weatherDescDownest {
+        font-size: 1.2rem;
+    }
+
+    .btnGeo {
+        height: 12vh;
+    }
+
+    /*! Color Guessing Game Styling ***/
+    .colorGuessingGameContainer {
+        justify-content: space-between;
+    }
+
+    .colorGuessingGameContainer button {
+        height: auto;
+    }
+
+    .colorGuessingGameContainer h1 {
+        font-size: 1rem;
+    }
+
+    #colorDisplay {
+        font-size: 1.2rem;
+    }
+
+    .colorGuessingGameBottomButtonRow {
+        height: 20vh;
+    }
+
+    .square {
+        height: 15vh;
+        width: 10vw;
+    }
+
+    #message {
+        font-size: 1.6rem;
+    }
+
+    .cgText {
+        padding: 25px 25px 0px 25px;
+        font-size: 0.8rem;
+        margin-bottom: 0px;
+    }
+
+    /*! Project Section ***/
+    .projectContainer {
+        height: 200vh;
+    }
+
+    .projectBox {
+        justify-content: space-evenly;
+        width: 35vw;
+        height: 60vh;
+        border-bottom: 3px solid white;
+        border-right: 3px solid white;
+        box-shadow: 10px 10px 0px black;
+    }
+
+    .projectImageDiv {
+        text-align: center;
+        width: inherit;
+    }
+
+    .projectImage {
+        width: 8rem;
+    }
+
+    .projectTitle {
+        font-size: 1rem;
+    }
+
+    .projectParagraph {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    /*! Footer Section ***/
+    .footerContainer {
+        height: 15vh;
+    }
+
+    .footerDiv {
+        text-align: center;
+        font-size: 1rem;
+        width: 25vw;
+    }
+
+    .fas {
+        font-size: 1rem;
+    }
+
+    .fab,
+    .far {
+        font-size: 1.5rem;
+    }
+
+    /*! General Styling ***/
+
+    .titleBox {
+        font-size: 1.3rem;
+    }
+
+    .box {
+        height: 80vh;
+        width: 38vw;
+        font-size: 1rem;
+    }
+}
