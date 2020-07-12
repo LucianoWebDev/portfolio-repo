@@ -1,3 +1,4 @@
+/*! General Styling Stuff **************/
 * {
     font-family: 'Space Mono', monospace;
     margin: 0px;
@@ -20,24 +21,8 @@ input {
     width: 15rem;
 }
 
-/*! Flexbox Stuff **************/
-.dFlex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .textCenter {
     text-align: center;
-}
-
-.dFlexFoot {
-    padding: 0px 5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
 }
 
 /*! Three Dots Separators *****************/
@@ -49,13 +34,28 @@ input {
     text-align: center;
 }
 
-/*! Heights ********************/
-.fullHeight {
-    height: 100vh;
+.three-dots span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 2px 2px red, 4px 4px blue;
+    background: black;
+    display: inline-block;
+    margin: 20px 5px;
 }
 
-.notFullHeight {
-    height: 90vh;
+.noUnderline:link {
+    text-decoration: none;
+}
+
+.three-dots-special span {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 2px 2px red, 4px 4px blue;
+    background: black;
+    display: inline-block;
+    margin: 0 5px;
 }
 
 /*! Navigation Bar Section **/
@@ -198,6 +198,10 @@ input {
     background-color: tomato;
 }
 
+.helloTextBox p {
+    color: white;
+}
+
 .helloTextBox p,
 h1 {
     padding: 0px 15px;
@@ -269,6 +273,10 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 30vh;
+}
+
+.leapYearTextBox p {
+    color: white;
 }
 
 #resultLY {
@@ -357,6 +365,10 @@ h1 {
 
 .armstrongNumbersTextBox h1 {
     text-shadow: 1px 1px 0px #056b41;
+}
+
+.armstrongNumbersTextBox p {
+    color: white;
 }
 
 .armstrongNumbersButtonBox {

@@ -19,31 +19,6 @@ a:active {
     border-bottom: 3px double black;
 }
 
-/*! Three Dots Separators *****************/
-.three-dots span {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    box-shadow: 2px 2px red, 4px 4px blue;
-    background: black;
-    display: inline-block;
-    margin: 20px 5px;
-}
-
-.noUnderline:link {
-    text-decoration: none;
-}
-
-.three-dots-special span {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    box-shadow: 2px 2px red, 4px 4px blue;
-    background: black;
-    display: inline-block;
-    margin: 0 5px;
-}
-
 /*! Box, Font & Button Shadows **************************/
 .btnShadow {
     width: 10rem;
@@ -52,10 +27,6 @@ a:active {
     margin-top: 1rem;
     border-color: black;
     box-shadow: 3px 3px blue, 6px 6px red;
-}
-
-.boxShadow {
-    box-shadow: 20px 20px black;
 }
 
 .tShadowBright {
