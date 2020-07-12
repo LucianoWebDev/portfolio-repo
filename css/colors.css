@@ -48,11 +48,3 @@ a:active {
     color: blue;
     background: yellow;
 }
-
-/*! Colors 'Hidden Game' ******************/
-.rulesTitle {
-    font-weight: bolder;
-    color: yellow;
-    font-size: 1.3rem;
-    letter-spacing: 1.2rem;
-}
