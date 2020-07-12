@@ -1,5 +1,4 @@
 /*! Link Colors *************************/
-
 a:link {
     color: black;
 }
@@ -12,35 +11,7 @@ a:active {
     color: inherit;
 }
 
-/*! Font Colors & Style ***************************/
-.tWhite {
-    color: white;
-}
-
-.tBlack {
-    color: black;
-}
-
-.tYellow {
-    color: yellow;
-}
-
-.tGreenCont {
-    color: #fffacd;
-}
-
-.tRedCont {
-    color: #2e343b;
-}
-
-.tBlueCont {
-    color: #eb9532;
-}
-
-.tOrangeCont {
-    color: #3455db;
-}
-
+/*! Font Decoration Style ***************************/
 .doubleUnderline {
     border-bottom: 3px double red;
 }
@@ -62,6 +33,7 @@ a:active {
 .noUnderline:link {
     text-decoration: none;
 }
+
 .three-dots-special span {
     width: 15px;
     height: 15px;

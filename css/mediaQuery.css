@@ -176,8 +176,17 @@
     }
 
     /*! Armstrong Numbers Section ********/
+    .armstrongNumbersTextBox h1 {
+        font-size: 1.2rem;
+    }
+
     .armstrongNumbersTextBox {
         background-color: blue;
+    }
+
+    .armstrongNumbersTextBox p {
+        color: white;
+        font-size: 1rem;
     }
 
     /*! I Want Colors Section ***/
@@ -449,6 +458,10 @@
     .projectParagraph {
         text-align: center;
         font-size: 0.8rem;
+    }
+
+    .pizzaText {
+        font-size: 0.6rem;
     }
 
     /*! Footer Section ***/

@@ -397,7 +397,6 @@ h1 {
 }
 
 /*! Horizontal Line Style ***/
-
 .horLine {
     height: 2vh;
     background-color: black;
@@ -537,6 +536,7 @@ h1 {
 }
 
 .projectImageDiv {
+    height: 45%;
     width: inherit;
 }
 
@@ -547,11 +547,22 @@ h1 {
 }
 
 .projectTitle {
+    text-align: center;
+    height: 10%;
     font-size: 1rem;
 }
 
 .projectParagraph {
+    text-align: center;
+    height: 45%;
     font-size: 0.8rem;
+}
+
+.calcText,
+.pizzaText,
+.weatherText {
+    font-size: 0.7rem;
+    padding: 0px 15px;
 }
 
 .pizzaProject {
@@ -571,18 +582,12 @@ h1 {
 }
 
 .weatherImageDiv {
-    height: 200px;
+    max-height: 200px;
     background-color: white;
 }
 
 .whiteText {
     color: white;
-    padding: 0px 15px;
-}
-
-.pizzaText,
-.weatherText {
-    padding: 0px 15px;
 }
 
 /*! Footer **********************/

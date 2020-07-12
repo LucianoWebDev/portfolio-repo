@@ -39,10 +39,9 @@
 
   <!--!  WELCOME SECTION -->
   <section class="welcomeSectionContainer" id="welcome">
-    <!--? ROW -->
+    <!--? BOX WITH TEXT -->
     <div class="welcomeSection">
-      <!-- <p class="fadeIn fOne"> -->
-      <p class="">
+      <p>
         <span class="welcText">Welcome..</span>
         <br>
         ..to my journey <wbr> to become a developer <br><a href="#about-me"><i class="fas fa-arrow-down"></i></i></a>
@@ -65,7 +64,7 @@
       <img src="img/meCut.jpg" alt="Picture of Me, Luciano M." id="picOfMe">
     </div>
 
-    <!--? BOX WITH ABOUT-ME SECTION -->
+    <!--? BOX WITH TEXT -->
     <div class="aboutMeBox wBorder box">
       <h1 class="doubleUnderline tShadowDark">
         Who am I?
@@ -98,25 +97,24 @@
 
   <!--! JavaScript Snippets #1 'Hello, World!-->
   <section class="helloContainer" id="hello-world">
-        <!--? BOX WITH EXPLENATION -->
-        <div class="helloTextBox wBorder box">
-          <h1 class="titleBox">My first steps..</h1>
-          <p class="tGreenCont tShadowBright">
-            The first thing that I programmed - <span class="doubleUnderlineDark">and most of the people who start programming do</span> - was of course a function
-            which returns <br>'Hello, World!'.
-          </p>
-        </div>
+    <!--? BOX WITH TEXT -->
+    <div class="helloTextBox wBorder box">
+      <h1 class="titleBox">My first steps..</h1>
+      <p class="tGreenCont tShadowBright">
+        The first thing that I programmed - <span class="doubleUnderlineDark">and most of the people who start programming do</span> - was of course a function
+        which returns <br>'Hello, World!'.
+      </p>
+    </div>
 
-      <!--? COL RIGHT-->
-      <div class="helloButtonBox wBorder box">
-        <h1 id="valueHW" class="tShadowDark">
-          Push the Button
-        </h1>
-        <button class="btnShadow" id="btnHW">
-          Say Hello!
-        </button>
-
-      </div>
+    <!--? BOX WITH BUTTON -->
+    <div class="helloButtonBox wBorder box">
+      <h1 id="valueHW" class="tShadowDark">
+        Push the Button
+      </h1>
+      <button class="btnShadow" id="btnHW">
+        Say Hello!
+      </button>
+    </div>
   </section>
 
 
@@ -133,6 +131,7 @@
 
   <!--! Short Story -->
   <section class="notImpressedContainer">
+      <!--? BOX WITH TEXT -->
       <div class="notImpressedBox wBorder">
         <p class="tWhite tRedCont">
           WOW.. not impressed. That's it? <br> One single button with "Hello, World!"? <br> My dog could do that.. (and even
@@ -155,7 +154,7 @@
 
   <!--! JavaScript Snippets #2 'Leap Year'-->
   <section class="leapYearContainer" id="lYear">
-    <!--? COL RIGHT -->
+    <!--? BOX WITH TEXT -->
     <div class="leapYearTextBox wBorder box">
       <h1 class="titleBox">Leap Year</h1>
       <p class="tGreenCont tShadowBright textPadding">
@@ -190,6 +189,7 @@
 
   <!--! Weather Widget -->
   <section class="weatherContainer">
+     <!--? BOX WITH TEXT -->
     <div class="weatherDiv wBorder">
         <input type="button" value="get gps for weather" class="btnGeo" onclick="getLocation()">
     </div>
@@ -209,6 +209,7 @@
 
   <!--! JavaScript Snippets #3 'Armstrong Number!-->
   <section class="armstrongNumbersContainer" id="armNumbers">
+     <!--? BOX WITH TEXT -->
     <div class="armstrongNumbersTextBox wBorder box">
       <h1>Armstrong Numbers</h1>
       <p class="tGreenCont tShadowBright">
@@ -221,6 +222,7 @@
     </div>
 
     <div class="armstrongNumbersButtonBox box wBorder">
+       <!--? BOX WITH BUTTON -->
       <label for="armNum"><h1 class="tShadowDark armstrongNumbersButtonBoxText">Insert a Number</h1></label><br>
       <input type="number" name="armNum" min="0" max="99999" id="valueAN" placeholder="choose a number">
       <h5 id="resultAN"></h5>
@@ -318,6 +320,7 @@
 
     <!-- Short Story -->
     <section class="projectExplenationContainer">
+      <!--? BOX WITH TEXT -->
       <div class="projectExplenationBox">
         <p class="tWhite">
           I made some very small projects. You can find them here. <br> I will add more as soon as I'm done with them.
@@ -344,7 +347,7 @@
           <img class="projectImage" src="./img/pizzaWordScr.PNG" alt="A screenshot of the pizza word converter">
         </div>
         <div class="projectTitleDiv">
-          <a href="https://lucianowebdev.github.io/pizzaWords/" target="_blank"><h3 class="projectTitle pizzaText">Pizza Words</h3></a>
+          <a href="https://lucianowebdev.github.io/pizzaWords/" target="_blank"><h3 class="projectTitle">Pizza Words</h3></a>
         </div>
         <div class="projectParagraph">
           <p class="pizzaText">This is a small programm, which turns every word with more than 5 characters into a pizza emoji.</p>
@@ -360,7 +363,7 @@
           <a href="https://lucianowebdev.github.io/calculator/" target="_blank"><h3 class="projectTitle whiteText">Calculator</h3></a>
         </div>
         <div class="projectParagraph">        
-          <p class="whiteText">I made a calculator mith HTML, CSS and JavaScript.</p>
+          <p class="whiteText calcText">I made a calculator mith HTML, CSS and JavaScript.</p>
         </div>
       </div>
       
@@ -370,10 +373,10 @@
           <img src="" alt="">
         </div>
         <div class="projectTitleDiv">        
-          <a href="https://lucianowebdev.github.io/clock_site/" target="_blank"></a><h3 class="projectTitle tGreenCont tShadowBright weatherText">Weather Widget</h3></a>
+          <a href="https://lucianowebdev.github.io/clock_site/" target="_blank"><h3 class="projectTitle">Weather Widget</h3></a>
         </div>
         <div class="projectParagraph">  
-          <p class="tGreenCont tShadowBright weatherText">As an exercise a made a webpage where it has three different ways to show the actual weather.</p>
+          <p class="weatherText">A made a webpage where it has three different ways to show the actual weather.</p>
         </div>
       </div>
       
