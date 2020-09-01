@@ -1,50 +1,56 @@
 /*! Link Colors *************************/
 a:link {
-    color: black;
+  color: black;
 }
 
 a:visited {
-    color: black;
+  color: black;
 }
 
 a:active {
-    color: inherit;
+  color: inherit;
 }
 
 /*! Font Decoration Style ***************************/
 .doubleUnderline {
-    border-bottom: 3px double red;
+  border-bottom: 3px double red;
 }
 .doubleUnderlineDark {
-    border-bottom: 3px double black;
+  border-bottom: 3px double black;
 }
 
 /*! Box, Font & Button Shadows **************************/
 .btnShadow {
-    width: 10rem;
-    height: 3rem;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-    border-color: black;
-    box-shadow: 3px 3px blue, 6px 6px red;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  border-color: black;
+  box-shadow: 3px 3px blue, 6px 6px red;
+}
+
+.btnShadow:active {
+  top: -10px;
+  transform: translateY(0.3rem);
+  box-shadow: 1px 1px blue, 2px 2px red;
 }
 
 .tShadowBright {
-    text-shadow: 2px 2px 0px black;
+  text-shadow: 2px 2px 0px black;
 }
 
 .tShadowDark {
-    text-shadow: 2px 2px white;
+  text-shadow: 2px 2px white;
 }
 
 /*! Colors Guessing Game *****************/
 #message {
-    color: white;
-    font-size: 2rem;
-    text-shadow: 2px 2px green, 2px 2px yellow;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px green, 2px 2px yellow;
 }
 
 .selected {
-    color: blue;
-    background: yellow;
+  color: blue;
+  background: yellow;
 }

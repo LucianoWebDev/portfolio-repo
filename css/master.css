@@ -1,631 +1,632 @@
 /*! General Styling Stuff **************/
 * {
-    font-family: 'Space Mono', monospace;
-    margin: 0px;
-    padding: 0px;
+  font-family: 'Space Mono', monospace;
+  margin: 0px;
+  padding: 0px;
 }
 
 p {
-    color: black;
-    overflow-wrap: break-word;
-    text-decoration: none;
+  color: black;
+  overflow-wrap: break-word;
+  text-decoration: none;
 }
 
 p:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 input {
-    font-size: 1.3rem;
-    height: 2rem;
-    width: 15rem;
+  font-size: 1.3rem;
+  height: 2rem;
+  width: 15rem;
 }
 
 .textCenter {
-    text-align: center;
+  text-align: center;
 }
 
 /*! Three Dots Separators *****************/
 .three-dots {
-    display: none;
+  display: none;
 }
 .three-dots-special {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
 .three-dots span {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    box-shadow: 2px 2px red, 4px 4px blue;
-    background: black;
-    display: inline-block;
-    margin: 20px 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  box-shadow: 2px 2px red, 4px 4px blue;
+  background: black;
+  display: inline-block;
+  margin: 20px 5px;
 }
 
 .noUnderline:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .three-dots-special span {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    box-shadow: 2px 2px red, 4px 4px blue;
-    background: black;
-    display: inline-block;
-    margin: 0 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  box-shadow: 2px 2px red, 4px 4px blue;
+  background: black;
+  display: inline-block;
+  margin: 0 5px;
 }
 
 /*! Navigation Bar Section **/
 .navBar {
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    justify-content: flex-end;
-    width: 100%;
-    height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: flex-end;
+  width: 100%;
+  height: 10vh;
 }
 
 .btnNavbar {
-    width: auto;
-    height: 2.5em;
-    margin: 10px 15px 0px 15px;
-    padding: 0px 35px;
-    border-color: black;
-    box-shadow: 3px 3px blue, 6px 6px red;
+  width: auto;
+  height: 2.5em;
+  margin: 10px 15px 0px 15px;
+  padding: 0px 35px;
+  border-color: black;
+  box-shadow: 3px 3px blue, 6px 6px red;
 }
 
 .dropDownBox {
-    overflow: hidden;
-    height: 0px;
-    background-color: red;
-    transition: all 1s ease;
+  overflow: hidden;
+  height: 0px;
+  background-color: red;
+  transition: all 1s ease;
 }
 
 .dropDownBox a {
-    color: white;
+  color: white;
 }
 
 .btnNavbar:hover > .dropDownBox {
-    display: block;
-    height: 30px;
+  display: block;
+  height: 30px;
 }
 
 /*! Welcome Section *********/
 .welcomeSectionContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
 }
 
 .welcomeSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fromLeft 1.4s;
 }
 
 .welcomeSection p {
-    padding: 0px 35px;
+  padding: 0px 35px;
 }
 
 .welcText {
-    font-size: 10vw;
+  font-size: 10vw;
 }
 
 /*! About Me Section ********/
 .aboutMeContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
 
 .aboutMePictureBox {
-    display: flex;
-    flex: row;
-    justify-content: center;
-    align-items: center;
-    height: 35vh;
+  display: flex;
+  flex: row;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
 }
 
 #picOfMe {
-    width: 22vh;
-    padding: 3px;
-    border: 2px solid black;
-    border-radius: 50%;
-    border-color: black;
-    transition: all 0.6s;
+  width: 22vh;
+  padding: 3px;
+  border: 2px solid black;
+  border-radius: 50%;
+  border-color: black;
+  transition: all 0.6s;
 }
 
 #picOfMe:hover {
-    width: 24vh;
-    border-top: none;
-    border-left: none;
-    border-right: 3px solid white;
-    border-bottom: 3px solid white;
-    box-shadow: 10px 10px 0px black;
+  width: 24vh;
+  border-top: none;
+  border-left: none;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  box-shadow: 10px 10px 0px black;
 }
 
 .aboutMeBox {
-    background-color: yellow;
-    text-align: center;
-    width: 100%;
-    height: 65vh;
+  background-color: yellow;
+  text-align: center;
+  width: 100%;
+  height: 65vh;
 }
 
 .aboutMeBox p {
-    text-align: center;
-    padding: 5px 15px 0px 15px;
+  text-align: center;
+  padding: 5px 15px 0px 15px;
 }
 
 .aboutMeBox p:last-child {
-    padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .aboutMeBox h1 {
-    padding: 10px 15px 0px 15px;
+  padding: 10px 15px 0px 15px;
 }
 
 /*! Hello World Section *****/
 .helloContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: orange;
-    height: 100vh;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  height: 100vh;
+  width: 100%;
 }
 
 .helloTextBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    width: 100vw;
-    height: 70vh;
-    font-size: 1.4rem;
-    text-align: right;
-    background-color: tomato;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100vw;
+  height: 70vh;
+  font-size: 1.4rem;
+  text-align: right;
+  background-color: tomato;
 }
 
 .helloTextBox p {
-    color: white;
+  color: white;
 }
 
 .helloTextBox p,
 h1 {
-    padding: 0px 15px;
+  padding: 0px 15px;
 }
 
 .helloButtonBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
 }
 
 /*! Not Impressed Section */
 .notImpressedContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
 }
 
 .notImpressedBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: inherit;
-    width: 100vw;
-    padding: 0px 15px;
-    font-size: 1.6rem;
-    background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: inherit;
+  width: 100vw;
+  padding: 0px 15px;
+  font-size: 1.6rem;
+  background-color: red;
 }
 
 .notImpressedBox p {
-    color: white;
+  color: white;
 }
 
 /*! Leap Year Section *****/
 .leapYearContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #3da5d9;
-    height: 100vh;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3da5d9;
+  height: 100vh;
+  width: 100%;
 }
 
 .leapYearTextBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 15px;
-    align-items: center;
-    width: 100vw;
-    height: 70vh;
-    font-size: 1.8rem;
-    text-align: left;
-    background-color: #2364aa;
-    word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 15px;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+  font-size: 1.8rem;
+  text-align: left;
+  background-color: #2364aa;
+  word-wrap: break-word;
 }
 
 .leapYearButtonBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
 }
 
 .leapYearTextBox p {
-    color: white;
+  color: white;
 }
 
 #resultLY {
-    color: white;
+  color: white;
 }
 
 .textPadding {
-    padding: 0px 2rem;
+  padding: 0px 2rem;
 }
 
 /*! Weather Widget Section *******/
 .weatherContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 75vh;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  width: 100%;
 }
 
 .weatherDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: inherit;
-    width: 100%;
-    background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: inherit;
+  width: 100%;
+  background-color: red;
 }
 
 .weatherCityDownest,
 .weatherTempDownest,
 .weatherDescDownest {
-    color: white;
-    font-size: 2rem;
-    word-wrap: break-word;
-    padding: 0px 15px;
+  color: white;
+  font-size: 2rem;
+  word-wrap: break-word;
+  padding: 0px 15px;
 }
 
 .weatherIconDownest {
-    margin-bottom: 0px;
-    height: 5.5rem;
+  margin-bottom: 0px;
+  height: 5.5rem;
 }
 
 .btnGeo {
-    width: auto;
-    padding: 0px 15px;
-    background-color: white;
-    border-color: black;
-    box-shadow: 3px 3px blue, 6px 6px green;
+  width: auto;
+  padding: 0px 15px;
+  background-color: white;
+  border-color: black;
+  box-shadow: 3px 3px blue, 6px 6px green;
 }
 
 /*! Armstrong Number Section *****/
 .armstrongNumbersContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #004f2d;
-    height: 100vh;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #004f2d;
+  height: 100vh;
+  width: 100%;
 }
 
 .armstrongNumbersTextBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 60vh;
-    font-size: 1.2rem;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .anStyle {
-    color: #fefefe;
-    text-shadow: 2px 2px 0px black;
+  color: #fefefe;
+  text-shadow: 2px 2px 0px black;
 }
 
 .anExampleText {
-    color: red;
-    text-shadow: 2px 2px 0px black;
-    text-decoration: underline white;
+  color: red;
+  text-shadow: 2px 2px 0px black;
+  text-decoration: underline white;
 }
 
 .armstrongNumbersTextBox h1 {
-    text-shadow: 1px 1px 0px #056b41;
+  text-shadow: 1px 1px 0px #056b41;
 }
 
 .armstrongNumbersTextBox p {
-    color: white;
+  color: white;
 }
 
 .armstrongNumbersButtonBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-color: #056b41;
-    height: 40vh;
-    width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: #056b41;
+  height: 40vh;
+  width: 100vw;
 }
 
 .armstrongNumbersButtonBoxText {
-    font-size: 2.2rem;
+  font-size: 2.2rem;
 }
 
 /*! I want colors Section ***/
 .iWantColorsContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
 }
 
 .iWantColorsBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: inherit;
-    font-size: 1.6rem;
-    padding: 0px 15px;
-    background-color: pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: inherit;
+  font-size: 1.6rem;
+  padding: 0px 15px;
+  background-color: pink;
 }
 
 /*! Horizontal Line Style ***/
 .horLine {
-    height: 2vh;
-    background-color: black;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+  height: 2vh;
+  background-color: black;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 /*! Color Guessing Game *********/
 .colorGuessingGameContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(95, 0, 173);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(95, 0, 173);
 }
 
 .colorGuessingGameTitleRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    width: 100%;
-    height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  width: 100%;
+  height: 20vh;
 }
 
 .colorGuessingGameTopRow,
 .colorGuessingGameBottomRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 20vh;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
 }
 
 .colorGuessingGameButtonRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 10vh;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
 }
 
 .colorGuessingGameBottomButtonRow {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 30vh;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
 }
 
 .colorGuessingGameDuoButtons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 20vh;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
 }
 
 .colorGuessingGameButtonRow button {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 .square {
-    width: 20vw;
-    height: 10vh;
-    background: salmon;
-    box-shadow: 5px 5px 0px black;
-    transition: background-color 0.4s;
-    -webkit-transition: background-color 0.4s;
-    -moz-transition: background-color 0.4s;
+  width: 20vw;
+  height: 10vh;
+  background: salmon;
+  box-shadow: 5px 5px 0px black;
+  transition: background-color 0.4s;
+  -webkit-transition: background-color 0.4s;
+  -moz-transition: background-color 0.4s;
 }
 
 #colorDisplay {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .cgText {
-    text-align: center;
-    font-size: 1.4rem;
-    color: white;
-    margin-bottom: 0px;
-    text-shadow: 1px 1px 0px red;
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px 0px red;
 }
 
 /*! Project Statement Section ***********/
 
 .projectExplenationContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 35vh;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  width: 100%;
 }
 
 .projectExplenationBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: inherit;
-    font-size: 1.4rem;
-    padding: 0px 15px;
-    background-color: #bfd7ea;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: inherit;
+  font-size: 1.4rem;
+  padding: 0px 15px;
+  background-color: #bfd7ea;
 }
 
 /*! Project Section *************/
 
 .projectContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    background-color: #ceb3ab;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #ceb3ab;
 }
 
 .projectBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 40vw;
-    height: 30vh;
-    border-bottom: 3px solid white;
-    border-right: 3px solid white;
-    box-shadow: 10px 10px 0px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40vw;
+  height: 30vh;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  box-shadow: 10px 10px 0px black;
 }
 
 .projectImageDiv {
-    height: 45%;
-    width: inherit;
+  height: 45%;
+  width: inherit;
 }
 
 .projectImage {
-    top: 0;
-    max-height: 200px;
-    width: inherit;
+  top: 0;
+  max-height: 200px;
+  width: inherit;
 }
 
 .projectTitle {
-    text-align: center;
-    height: 10%;
-    font-size: 1rem;
+  text-align: center;
+  height: 10%;
+  font-size: 1rem;
 }
 
 .projectParagraph {
-    text-align: center;
-    height: 45%;
-    font-size: 0.8rem;
+  text-align: center;
+  height: 45%;
+  font-size: 0.8rem;
 }
 
 .calcText,
 .pizzaText,
 .weatherText {
-    font-size: 0.7rem;
-    padding: 0px 15px;
+  font-size: 0.7rem;
+  padding: 0px 15px;
 }
 
 .pizzaProject {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 .calcProject {
-    background-color: #004f2d;
+  background-color: #004f2d;
 }
 
 .weatherProject {
-    background-color: #eb4d4d;
+  background-color: #eb4d4d;
 }
 
 .timeProject {
-    background-color: blueviolet;
+  background-color: blueviolet;
 }
 
 .weatherImageDiv {
-    max-height: 200px;
-    background-color: white;
+  max-height: 200px;
+  background-color: white;
 }
 
 .whiteText {
-    color: white;
+  color: white;
 }
 
 /*! Footer **********************/
 .footerContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: orange;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: orange;
 }
 
 .footerDiv {
-    text-align: center;
-    font-size: 0.8rem;
-    width: 25vw;
+  text-align: center;
+  font-size: 0.8rem;
+  width: 25vw;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .fab,
 .far,
 .fas {
-    font-size: 1.3rem;
-    color: black;
+  font-size: 1.3rem;
+  color: black;
 }
 
 /*************************************?
@@ -635,158 +636,158 @@ a:hover {
 
 /*! Hidden Game Navigation Bar ***/
 .hiddenGameNavBar {
-    display: flex;
-    flex-direction: row;
-    word-wrap: break-word;
-    justify-content: flex-start;
-    align-items: center;
-    height: 8vh;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  word-wrap: break-word;
+  justify-content: flex-start;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
 }
 
 .btnNavbar {
-    align-self: flex-start;
-    padding: 0px 5px;
-    margin-left: 10px;
-    font-size: 1rem;
-    width: 35vw;
+  align-self: flex-start;
+  padding: 0px 5px;
+  margin-left: 10px;
+  font-size: 1rem;
+  width: 35vw;
 }
 
 .hiddenGameNavBar p {
-    margin-top: 5px;
-    font-size: 0.6rem;
+  margin-top: 5px;
+  font-size: 0.6rem;
 }
 
 /*! Hidden Game Container ***/
 .sherlockText {
-    margin-top: -15px;
-    text-align: center;
-    font-size: 0.8rem;
+  margin-top: -15px;
+  text-align: center;
+  font-size: 0.8rem;
 }
 
 .hiddenGameContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 91vh;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 91vh;
+  width: 100%;
 }
 
 .hiddenGameBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border: 2px solid black;
-    background-color: lightslategrey;
-    height: 100%;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 2px solid black;
+  background-color: lightslategrey;
+  height: 100%;
+  width: 100%;
 }
 
 /*! Hidden Game Player Row ***/
 .hiddenGamePlayerRow {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 45%;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 45%;
+  width: 100%;
 }
 
 .player-0-panel,
 .player-1-panel {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 3px 3px 0px blue, 6px 6px 0px red;
-    justify-content: space-evenly;
-    background-color: white;
-    align-items: center;
-    margin: 0px 15px 0px 15px;
-    width: 70%;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 0px blue, 6px 6px 0px red;
+  justify-content: space-evenly;
+  background-color: white;
+  align-items: center;
+  margin: 0px 15px 0px 15px;
+  width: 70%;
+  height: 100%;
 }
 
 .player-current-box {
-    text-align: center;
-    color: black;
-    padding: 0px 5px;
-    background-color: #eb4d4d;
-    box-shadow: 2px 2px 0px blue, 4px 4px 0px red;
+  text-align: center;
+  color: black;
+  padding: 0px 5px;
+  background-color: #eb4d4d;
+  box-shadow: 2px 2px 0px blue, 4px 4px 0px red;
 }
 
 .active {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 .hiddenGameDices {
-    width: 20%;
+  width: 20%;
 }
 
 .winner .player-name {
-    font-weight: 500;
-    color: #eb4d4d;
+  font-weight: 500;
+  color: #eb4d4d;
 }
 
 /*! Hidden Game Dice Row ***/
 .hiddenGameDices {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .dice {
-    border: 1px solid black;
-    height: 5vh;
-    box-shadow: -2px -2px 0px blue, 4px 4px 0px red;
+  border: 1px solid black;
+  height: 5vh;
+  box-shadow: -2px -2px 0px blue, 4px 4px 0px red;
 }
 
 /*! Hidden Game Button Row ***/
 .hiddenGameButtonRow {
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-    width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .hiddenGameButtonRow button {
-    height: 5vh;
-    width: 20vw;
-    font-weight: 500;
-    box-shadow: 3px 3px 0px blue, 6px 6px 0px red;
+  height: 5vh;
+  width: 20vw;
+  font-weight: 500;
+  box-shadow: 3px 3px 0px blue, 6px 6px 0px red;
 }
 
 .sqDice {
-    width: 5vw;
-    height: 5vh;
-    background: salmon;
-    transition: background-color 0.4s;
-    -webkit-transition: background-color 0.4s;
-    -moz-transition: background-color 0.4s;
-    box-shadow: 10px 10px black;
+  width: 5vw;
+  height: 5vh;
+  background: salmon;
+  transition: background-color 0.4s;
+  -webkit-transition: background-color 0.4s;
+  -moz-transition: background-color 0.4s;
+  box-shadow: 10px 10px black;
 }
 
 /*! Hidden Game Rule Row ***/
 .hiddenGameRuleRow {
-    text-align: center;
+  text-align: center;
 }
 
 .hiddenGameRuleRow input {
-    height: auto;
-    font-size: 0.8rem;
+  height: auto;
+  font-size: 0.8rem;
 }
 
 .rulesTitle {
-    font-weight: bolder;
-    color: yellow;
-    font-size: 1.3rem;
-    letter-spacing: 1.2rem;
+  font-weight: bolder;
+  color: yellow;
+  font-size: 1.3rem;
+  letter-spacing: 1.2rem;
 }
 
 .rules {
-    padding-left: 15px;
-    margin-bottom: -15px;
-    text-align: left;
-    font-size: 0.8rem;
+  padding-left: 15px;
+  margin-bottom: -15px;
+  text-align: left;
+  font-size: 0.8rem;
 }
 
 /*********************************************
@@ -794,32 +795,32 @@ a:hover {
 **********************************************/
 
 .player-name {
-    font-size: 1.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 100;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
 }
 
 .player-score {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 100;
-    color: #eb4d4d;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: #eb4d4d;
 }
 
 .active .player-name {
-    color: #eb4d4d;
-    font-weight: 300;
+  color: #eb4d4d;
+  font-weight: 300;
 }
 
 .active .player-name::after {
-    content: '\2022';
-    font-size: 20px;
-    position: absolute;
-    color: #eb4d4d;
+  content: '\2022';
+  font-size: 20px;
+  position: absolute;
+  color: #eb4d4d;
 }
 
 .winner {
-    background-color: #f7f7f7;
+  background-color: #f7f7f7;
 }

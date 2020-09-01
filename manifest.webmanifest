@@ -1,0 +1,16 @@
+{
+  "name": "Luciano M. - Portfolio",
+  "short_name": "Luciano M.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A very simple covid tracker for switzerland.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16 32x32 192x192 512x512",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    }
+  ]
+}
